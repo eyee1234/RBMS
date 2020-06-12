@@ -8,7 +8,7 @@ class User(db.Document):
     last_name   = db.StringField(max_length=50)
     email       = db.StringField(max_length=30,unique=True)
     password    = db.StringField()
-    roleId      = db.StringField(unique=True)
+    roleId      = db.StringField()
     timestamps  = db.DateTimeField()
 
     def set_password(self,password):
