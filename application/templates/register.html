@@ -42,7 +42,12 @@
                      <span class="error-message">{{ error }}</span>
                     {% endfor %}
                 </p>
-            
+                <p> {{ form.role_id.label }}</br>
+                    {{ form.role_id }}
+                    {% for error in form.role_id.errors %}
+                     <span class="error-message">{{ error }}</span>
+                    {% endfor %}
+                </p>
                 <p> 
                     {{ form.submit() }}
                 </p>
